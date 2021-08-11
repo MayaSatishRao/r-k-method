@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Runge Kutta Method Online Calculator</h1>
+    
+    <div class="intro">
+    <p>Online tool to solve ordinary differential equations with initial conditions (x0, y0) and calculation point (xn) using Runge Kutta (RK) method.</p>
+    <p>To use this calculator, you should have differential equation in the form</p>
+    <img src="https://planetcalc.com/cgi-bin/mimetex.cgi?y%20%5Cprime%20%3D%20f%28x%2Cy%29" alt="">
+    </div>
+
+    <form  method="post" action="/">
+        <label for="expression">f(x,y)</label>
+        <input type="text" placeholder="expression" name="expression" autocomplete="off" required>
+        <div class="numbers">
+            <div class="number">
+            <label for="x0">x0</label>
+        <input type="text" name = "x0" placeholder="x0" autocomplete="off" required>
+        </div>
+        <div class="number">
+        <label for="y0">y0</label>
+        <input type="text" name = "y0" placeholder="y0" autocomplete="off" required>
+       </div>    
+    </div>
+        <div class="numbers">
+            <div class="number">
+            <label for="h">Step height</label>
+        <input type="text" name = "h" placeholder="step height" autocomplete="off" required>
+        </div>
+        <div class="number">
+        <label for="xn">xn</label>
+        <input type="text" name = "xn" placeholder="xn" autocomplete="off" required>
+    </div>    
+    </div>
+        <button type="submit">Calculate</button>
+    </form>
+
+    <div id="solution"></div>
+</body>
+<script src="index.js"></script>
+<script>
+    const button = document.querySelector(".intro button");
+    button.addEventListener("click",()=>{
+        
+    })
+</script>
+</html>
